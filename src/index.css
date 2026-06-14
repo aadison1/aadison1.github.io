@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: #080808;
+    color: #c8c8c8;
+    font-family: 'Space Mono', 'Courier New', monospace;
+    font-size: 14px;          /* 10% above original 13px */
+    line-height: 1.85;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  ::selection { background: #ffffff; color: #000000; }
+
+  a { color: inherit; text-decoration: none; }
+
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: #080808; }
+  ::-webkit-scrollbar-thumb { background: #2a2a2a; }
+  ::-webkit-scrollbar-thumb:hover { background: #555; }
+}
+
+/* ── Divider ─────────────────────────────────────────────────── */
+.divider {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.09);
+}
+
+/* ── Shared page container ───────────────────────────────────── */
+.page-container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 96px 48px 100px;
+}
+
+/* ── Row links (accolades, contact) ──────────────────────────── */
+.row-link {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  padding: 1rem 6px;
+  border-bottom: 1px solid rgba(255,255,255,0.09);
+  transition: background 0.15s;
+  cursor: pointer;
+}
+.row-link:first-of-type { border-top: 1px solid rgba(255,255,255,0.09); }
+.row-link:hover { background: rgba(255,255,255,0.025); }
+.row-link:hover .row-title { color: #ffffff; }
+
+.row-year {
+  color: #909090;
+  font-size: 12px;
+  width: 38px;
+  flex-shrink: 0;
+}
+
+.row-title {
+  flex: 1;
+  font-size: 14px;
+  color: #e0e0e0;
+  transition: color 0.15s;
+}
+
+.row-sub {
+  color: #777;
+  font-size: 11px;
+  margin-left: 14px;
+}
+
+.row-arrow {
+  color: #555;
+  flex-shrink: 0;
+  transition: color 0.15s;
+}
+.row-link:hover .row-arrow { color: #aaa; }
+
+/* ── Section label ───────────────────────────────────────────── */
+.section-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #888;
+  margin-bottom: 2.2rem;
+}
+
+/* ── Entry blocks (service) ──────────────────────────────────── */
+.entry {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.entry:first-of-type { border-top: 1px solid rgba(255,255,255,0.08); }
+
+.entry-period {
+  font-size: 11px;
+  color: #888;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.3rem;
+}
+
+.entry-org {
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 3px;
+}
+
+.entry-role {
+  font-size: 12px;
+  color: #aaa;
+  margin-bottom: 0.65rem;
+  letter-spacing: 0.02em;
+}
+
+/* No max-width — let text run to the right bound */
+.entry-desc {
+  font-size: 13px;
+  color: #999;
+  line-height: 1.9;
+}
+
+
+/* ── Accordion project rows ──────────────────────────────────── */
+.proj-row {
+  border-bottom: 1px solid rgba(255,255,255,0.09);
+}
+.proj-row:first-of-type { border-top: 1px solid rgba(255,255,255,0.09); }
+
+.proj-trigger {
+  width: 100%;
+  text-align: left;
+  padding: 1.3rem 6px;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.proj-trigger:hover { background: rgba(255,255,255,0.02); }
+
+.proj-expand {
+  padding: 0 6px 1.6rem 6px;
+}
+
+.tag-pill {
+  display: inline-block;
+  font-size: 11px;
+  color: #888;
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 2px 9px;
+  letter-spacing: 0.04em;
+}
