@@ -1,7 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="8" fill="#0055FF"/>
-  <text x="50%" y="50%" dominant-baseline="central" text-anchor="middle"
-    font-family="Inter, sans-serif" font-weight="700" font-size="13" fill="#ffffff">
-    AS
-  </text>
+  <rect width="32" height="32" rx="8" fill="#1a1a1a"/>
+  <polygon points="16,4 18.9,12.2 27.5,12.2 20.8,17.5 23.4,25.9 16,20.8 8.6,25.9 11.2,17.5 4.5,12.2 13.1,12.2"
+    fill="#d4d4d4"/>
 </svg>

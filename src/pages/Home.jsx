@@ -3,6 +3,7 @@ import { GraduationCap } from 'lucide-react'
 
 const socials = [
   { label: 'Email',    href: 'mailto:aadipsoni@gmail.com',                       external: false },
+  { label: 'X',        href: 'https://x.com/aad1son1',                           external: true  },
   { label: 'Github',   href: 'https://github.com/aadison1',                      external: true  },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/aadi-soni-539b0b311/', external: true  },
   { label: 'Orcid',    href: 'https://orcid.org/0009-0008-7564-5520',            external: true  },
