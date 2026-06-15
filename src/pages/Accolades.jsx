@@ -27,7 +27,7 @@ const accolades = [
   },
   {
     year: '2026',
-    title: 'Stanford Math Tournament Distinguished Honorable Mention',
+    title: 'Stanford Math Tournament Distinguished HM',
     sub:   'Algebra and Team Round',
     href:  'https://www.stanfordmathtournament.org/competitions/smt-2026-online',
   },
