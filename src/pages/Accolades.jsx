@@ -26,6 +26,12 @@ const accolades = [
     href:  'https://ieeexplore.ieee.org/document/11533024',
   },
   {
+    year: '2026',
+    title: 'Stanford Math Tournament Distinguished Honorable Mention',
+    sub:   'Algebra and Team Round',
+    href:  'https://www.stanfordmathtournament.org/competitions/smt-2026-online',
+  },
+  {
     year: '2025',
     title: 'MIT URTC Conference Presenter',
     sub:   'Retinal Imaging',
